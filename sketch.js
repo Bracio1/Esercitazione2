@@ -4,13 +4,6 @@ function setup() {
   noCursor(); // nascoondere cursore mouse 
 }
 
-function draw() {
-  // ricordati che forse lo vuoi levare sto coso, il cerchio che segue il mouse è un po' trash
-  noStroke();
-  fill(0, 50);
-  ellipse(mouseX, mouseY, 10, 10);
-}
-
 function mouseMoved() {
   // ogni movimento genera una forma casuale
   drawRandomShape(mouseX, mouseY);
